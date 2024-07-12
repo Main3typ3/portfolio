@@ -1,0 +1,116 @@
+body {
+    font-family: Calibri, Arial, sans-serif;
+    background-color: #fbfaf6;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+
+ul {
+    font-size: 19px;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding-right: 50px;
+    padding-top: 21px;
+}
+
+
+
+
+li {
+    margin-right:30px;
+}
+
+a:link {
+    
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    opacity: 0.6;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .mepic{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .logo{
+    padding-top: 20px; 
+    padding-left: 30px;
+  }
+.gitlogo{
+    width: 45px;
+}
+.gitlogo:hover{
+    opacity: 0.8;
+}
+.gitlogo:active{
+    opacity: 0.6;
+    width: 46px;
+}
+.cv_pdf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; /* Adjust the margin-top value as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+.project{
+ display:flex;
+ flex-direction: row;
+}
+
+
+    .beautiful_buttons {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #000000;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .beautiful_buttons:hover {
+        opacity: 0.8;
+    }
+
+    .beautiful_buttons:active {
+        opacity: 0.6;
+    }
+
