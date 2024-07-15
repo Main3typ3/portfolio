@@ -114,3 +114,14 @@ a:link {
         opacity: 0.6;
     }
 
+    .flappygame{
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+
+    }
+
+    #board{
+     
+        background-color: aqua;
+        background-image: url("flappymeback.png");
+    }
