@@ -29,7 +29,7 @@ let bottompipeimage;
 
 let velocityX = -2; //pipe speed
 let velocityY = 0; // Bird jump speed
-let gravity = 0.3; // Bird fall speed
+let gravity = 0.1; // Bird fall speed
 let Score = 0;
 
 let gameover = false;
