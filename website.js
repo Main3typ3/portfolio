@@ -104,7 +104,8 @@ function update(){
         context.fillText("Game Over", 120, board.height / 2);
         context.fillText("Score: "+ Score, 120, board.height / 2 + 30);
         context.font = "16px Verdana";
-        context.fillText("Press Enter/ Space to play again ", 70, board.height / 2 + 60);
+        context.fillText("Press up arrow / click to play again ", 70, board.height / 2 + 60);
+        document.addEventListener("click", moveBirdmousereset);
     }
     
 
@@ -140,16 +141,20 @@ function PlacePipes(){
     
 }
 
-function moveBirdmouse(event){
-    velocityY = -6; 
 
-    if(gameover && (event.code == "Enter" || event.code == "Space" || event.code == "ArrowUp" || event.code == "MouseClick")){
-        gameover = false;
-        bird.y = birdY;
-        Score = 0;
-        pipearray = [];
-        //requestAnimationFrame(update);
+function moveBirdmousereset(event){
+    if (gameover){
+    gameover = false;
+    bird.y = birdY;
+    Score = 0;
+    pipearray = [];
+
     }
+    
+
+}
+function moveBirdmouse(event){
+    velocityY = -5; 
 }
 
 
