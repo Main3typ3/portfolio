@@ -154,7 +154,7 @@ function moveBirdmousereset(event){
 
 }
 function moveBirdmouse(event){
-    velocityY = -5; 
+    velocityY = -6; 
 }
 
 
