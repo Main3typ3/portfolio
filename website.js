@@ -3,6 +3,10 @@ let boardwidth = 380;
 let boardheight = 646;
 let context;
 
+let StartButton;
+let startButtonwidth = 110;
+let startButtonheight = 37;
+
 
 let birdwidth = 42;
 let birdheight = 51;
@@ -34,13 +38,41 @@ let Score = 0;
 
 let gameover = false;
 
-window.onload = function() {
+window.onload = function(){
+
     board = document.getElementById("board");
     board.height = boardheight;
     board.width = boardwidth;
-    context = board.getContext("2d"); 
+    context = board.getContext("2d");
 
     
+    
+    StartButton = document.getElementById("startButton");
+    StartButton.style.display = "block";
+    StartButton.width = startButtonwidth;
+    StartButton.height = startButtonheight;
+
+    StartButton.addEventListener("click", startGame);
+   
+    
+    
+
+}
+
+  
+
+
+
+
+
+function startGame() {
+   // board = document.getElementById("board");
+   // board.height = boardheight;
+   // board.width = boardwidth;
+  //  context = board.getContext("2d"); 
+
+
+    StartButton.style.visibility = "hidden";
     birdimage = new Image();
     birdimage.src = "flappymeimage.png";
     birdimage.onload = function() {

@@ -125,3 +125,32 @@ a:link {
         background-color: aqua;
         background-image: url("flappymeback.png");
     }
+
+    #contact{
+        border-radius: 10%; 
+        background-color: rgb(225, 225, 225); 
+        color: rgb(0, 0, 0); 
+        border: 10px solid rgb(225, 225, 225);;
+    }
+    
+    #contact:hover{
+        background-color: rgb(126, 126, 126); 
+        color: rgb(255, 255, 255); 
+        border: 10px solid rgb(126, 126, 126);
+        opacity: 0.3;
+    }
+   .contact-form{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         border: 10px solid rgb(225, 225, 225);;
+   }
+#startButton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
