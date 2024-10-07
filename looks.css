@@ -65,6 +65,11 @@ a:link {
     justify-content: center;
     
   }
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .logo{
     padding-top: 20px; 
     padding-left: 30px;

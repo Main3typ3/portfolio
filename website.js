@@ -122,7 +122,11 @@ function update(){
         if(detectcollison(bird, pipe)){
             gameover = true;
         }
+        if(Score > 1){
+            velocityX = velocityX - 0.0005;
+        }
     }
+     
 
    while(pipearray.length > 0 && pipearray[0].x < -pipewidth){
          pipearray.shift();
@@ -137,6 +141,7 @@ function update(){
         context.fillText("Score: "+ Score, 120, board.height / 2 + 30);
         context.font = "16px Verdana";
         context.fillText("Press up arrow / click to play again ", 70, board.height / 2 + 60);
+        velocityX = -2;
         document.addEventListener("click", moveBirdmousereset);
     }
     
@@ -200,6 +205,7 @@ function moveBird(event){
         gameover = false;
         bird.y = birdY;
         Score = 0;
+        velocityX = -2;
         pipearray = [];
         //requestAnimationFrame(update);
     }
