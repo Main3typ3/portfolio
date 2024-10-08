@@ -3,6 +3,7 @@
 <head>
     <title>Contact Information</title>
     <link rel="stylesheet" href="looks.css">
+    <script src="Contactme.js" type = module></script>
     <link
             rel="icon"
             href="cropped-pic.png"
@@ -30,7 +31,7 @@
 
     
 
-    <br>
+    
     <h2 style="text-align: center;font-family: 'Times New Roman', Times, serif;; font-size: 50px; font-weight: normal;">Contact Me</h2>
     
 
@@ -49,15 +50,16 @@
             <label for="email" style ="padding-right: 32px;">Email:</label>
             <input type="email" id="email" name="email" required>
             <br><br>
-            <label for="message" >Message:</label>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            <label for="message" ">Message:</label> 
+            <textarea id="message" name="message" rows="3" cols="70" required></textarea>
             <br><br>
-            <button type="submit" class = "beautiful_buttons">Contact Me</button>
+            <button type="button" id = "contact_button" class = "beautiful_buttons">Contact Me</button>
+            <p  id = "update_contact" style = " text-align: right;"></p>
         </form>
     </div>
     
     <h2 style="font-family: 'Times New Roman', Times, serif;">Name:</h2>
-    <p>Samuel Maine</p>
+    <p >Samuel Maine</p>
     
     <h2 style="font-family: 'Times New Roman', Times, serif;">Email: </h2>
     <p>Sammy.maine1@gmail.com</p>
