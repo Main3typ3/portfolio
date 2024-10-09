@@ -30,7 +30,6 @@ ul {
 
 
 
-
 li {
     margin-right:30px;
 }
@@ -47,17 +46,16 @@ a:link {
     background-color: transparent;
     text-decoration: none;
   }
-  
   a:hover {
-    
-    background-color: transparent;
-    text-decoration: underline;
+    transform: scale(1.5);
   }
   
+ 
   a:active {
     opacity: 0.6;
     background-color: transparent;
     text-decoration: underline;
+    transform: scale(1.5);
   }
   .mepic{
     width: 100%;
@@ -74,6 +72,10 @@ a:link {
     padding-top: 20px; 
     padding-left: 30px;
   }
+  .logo:hover{
+    transform: scale(1.1);
+  }
+
 .gitlogo{
     width: 45px;
 }
