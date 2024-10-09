@@ -1,7 +1,8 @@
 body {
     font-family: Calibri, Arial, sans-serif;
-    background-color: #fbfaf6;
-    
+    background-color: #fbfaf6; 
+   /* background: radial-gradient(circle, #dde1e4, #fbfaf6); */
+   
 }
 
 header {
@@ -47,7 +48,7 @@ a:link {
     text-decoration: none;
   }
   a:hover {
-    transform: scale(1.5);
+    font-size: 25px;
   }
   
  
@@ -55,7 +56,7 @@ a:link {
     opacity: 0.6;
     background-color: transparent;
     text-decoration: underline;
-    transform: scale(1.5);
+    
   }
   .mepic{
     width: 100%;
@@ -160,4 +161,100 @@ a:link {
     transform: translate(-50%, -50%);
     
     
+}
+
+.star_wrap span{
+    position: fixed;
+    animation: animate 2s linear infinite;
+
+}
+.star_wrap span i{
+    color: #000000;
+    font-size: 30px;
+}
+.star_wrap span:nth-child(1){
+    left: 5%;
+    animation-delay:0.6s;
+    top: 20%;
+    z-index: -1;
+
+}
+.star_wrap span:nth-child(2){
+    left: 13%;
+    animation-delay:2s;
+    top: 45%;
+    z-index: -1;
+
+}
+.star_wrap span:nth-child(3){
+    left: 23%;
+    animation-delay:1s;
+    top: 75%;
+    z-index: -1;
+}
+.star_wrap span:nth-child(4){
+    left: 80%;
+    animation-delay:1.5s;
+    top: 75%;
+    z-index: -1;
+}
+.star_wrap span:nth-child(5){
+    left: 60%;
+    animation-delay:0.5s;
+    top: 30%;
+    z-index: -1;
+}
+.star_wrap span:nth-child(6){
+    left: 70%;
+    animation-delay:1.8s;
+    top: 10%;
+    z-index: -1;
+}
+.star_wrap span:nth-child(7){
+    left: 34%;
+    animation-delay:1.2s;
+    top: 34%;
+    z-index: -1;
+}
+.star_wrap span:nth-child(8){
+    left: 50%;
+    animation-delay:0.8s;
+    top: 60%;
+    z-index: -1;
+}
+.star_wrap span:nth-child(9){
+    left: 90%;
+    animation-delay:1.3s;
+    top: 40%;
+    z-index: -1;
+}
+.star_wrap span:nth-child(10){
+    left: 30%;
+    animation-delay:1.6s;
+    top: 3%;
+    z-index: -1;
+}
+
+
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.main_content{
+    display: flex;
+   
+    height: 100vh;
+    align-self: stretch;
+
 }
