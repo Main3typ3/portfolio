@@ -263,7 +263,8 @@ a:link {
 }
 .intro_cont{
     display:inline-block;
-    
+    margin-left: 35%;
+
    
 }
 .cool_intro{
@@ -277,8 +278,8 @@ a:link {
      white-space: nowrap;
      overflow: hidden;
      animation:
-        typing 2s steps(15, end),
-        cursor 0.5s steps(15, end) infinite;
+        typing 2s steps(14, end),
+        cursor 0.5s steps(14, end) infinite;
 }
 @keyframes cursor{
     50% { border-color: transparent; }
