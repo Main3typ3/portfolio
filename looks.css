@@ -12,7 +12,7 @@ header {
     padding: 0 70px;
 }
 
-nav {
+header nav {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
@@ -20,7 +20,7 @@ nav {
     
 }
 
-ul {
+header ul {
     font-size: 19px;
     display: flex;
     list-style-type: none;
@@ -31,7 +31,7 @@ ul {
 
 
 
-li {
+header li {
     margin-right:30px;
 }
 
@@ -289,4 +289,32 @@ a:link {
 }
 @keyframes typing{
     from { width: 0; }
+}
+.mainpic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 550px; /* Adjust the width as needed */
+    height: 650px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    overflow: hidden; /* Ensures the image stays within the circular border */
+    border: 0px solid #000; /* Optional: Add a border to make the circular shape more prominent */
+}
+
+.mainpic :hover{
+    transform: scale(1.03);
+    transition-duration: 0.4s;
+}
+
+.projlist ul{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    align-content: space-between;
+    gap: 20px;
+    
+
 }
