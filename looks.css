@@ -134,7 +134,7 @@ a:link {
     #board{
      
         background-color: aqua;
-        background-image: url("flappymeback.png");
+        background-image: url("/flappybird/flappymeback.png");
     }
 
     #contact{
