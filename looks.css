@@ -35,26 +35,26 @@ header li {
     margin-right:30px;
 }
 
-a:link {
+header a:link {
     
     color: black;
     background-color: transparent;
     text-decoration: none;
   }
   
-  a:visited {
+  header a:visited {
     color: black;
     background-color: transparent;
     text-decoration: none;
   }
-  a:hover {
+ header a:hover {
     font-size: 25px;
     transition-duration: 0.6s;
     
   }
   
  
-  a:active {
+  header a:active {
     opacity: 0.6;
     background-color: transparent;
     text-decoration: underline;
@@ -318,3 +318,36 @@ a:link {
     
 
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width:800px;
+    justify-content: center;
+    border: 2px solid rgb(255, 255, 255);
+    align-content: flex-start;
+    margin: 0 auto;
+    gap:5px;
+}
+
+.item {
+    display: flex;
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    border: 2px solid rgb(173, 171, 171);
+    border-radius: 10%;
+    /*  Ensure no padding */
+    margin: 0; /* Ensure no margin */
+}
+.item:hover{
+    
+    transform: scale(1.05);
+    transition-duration: 0.5s
+    
+} 
+.item-2{
+    text-align: center;
+}
+
+
+
