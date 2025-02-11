@@ -2,7 +2,7 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 
 // Initialize Supabase client
 const supabaseUrl = 'https://bozinsjycznqmzyzsxbw.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJvemluc2p5Y3pucW16eXpzeGJ3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjgzNDYxNzgsImV4cCI6MjA0MzkyMjE3OH0.43fHDg7EDqzymr6Ac4MLodvQEJxXUNj1huI59wyDVcA';
+const supabaseKey = '';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 document.getElementById("contact_button").addEventListener("click",function(){
